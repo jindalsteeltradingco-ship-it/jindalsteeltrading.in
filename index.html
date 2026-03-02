@@ -1,130 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jindal Steel Trading Co. - Leading Steel Supplier in Gurgaon</title>
-<meta name="description" content="Premium Quality MS Iron Pipes, Angles, Channels & Iron Products at Best Rates. Serving Industries Across India.">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',Arial,sans-serif;color:#1a1a2e}
-nav{background:#1a1a2e;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-icon{background:linear-gradient(135deg,#6c63ff,#3f3d56);color:#fff;width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px}
-.logo-text h1{color:#fff;font-size:16px;font-weight:700}
-.logo-text p{color:#aaa;font-size:11px}
-.nav-links{display:flex;gap:25px;list-style:none}
-.nav-links a{color:#ddd;text-decoration:none;font-size:14px}
-.nav-links a:hover{color:#fff}
-.btn-call{background:#ff6b35;color:#fff;padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:600;font-size:14px}
-hero{display:block;background:linear-gradient(135deg,#6c63ff 0%,#3f3d56 50%,#9b59b6 100%);padding:100px 30px;text-align:center;color:#fff}
-hero h2{font-size:3rem;font-weight:800;margin-bottom:20px;line-height:1.2}
-hero p{font-size:1.1rem;opacity:.9;margin-bottom:15px}
-.hero-btns{display:flex;gap:20px;justify-content:center;margin:30px 0}
-.btn-primary{background:#ff6b35;color:#fff;padding:15px 35px;border-radius:30px;text-decoration:none;font-weight:700;font-size:15px}
-.btn-secondary{background:rgba(255,255,255,.2);color:#fff;padding:15px 35px;border-radius:30px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid rgba(255,255,255,.4)}
-.badges{display:flex;gap:40px;justify-content:center;margin-top:30px;flex-wrap:wrap}
-.badge{color:rgba(255,255,255,.9);font-size:14px}
-section{padding:70px 30px}
-.section-title{text-align:center;font-size:2rem;font-weight:700;margin-bottom:10px;color:#1a1a2e}
-.section-sub{text-align:center;color:#666;margin-bottom:50px;font-size:1rem}
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;max-width:1200px;margin:0 auto}
-.product-card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:transform .2s}
-.product-card:hover{transform:translateY(-5px)}
-.product-card img{width:100%;height:220px;object-fit:cover}
-.card-body{padding:20px}
-.card-body h3{font-size:1.2rem;color:#1a1a2e;margin-bottom:12px}
-.card-body ul{list-style:none}
-.card-body li{color:#555;font-size:14px;padding:4px 0;border-bottom:1px solid #f0f0f0}
-.card-body li:last-child{border-bottom:none}
-.contact-section{background:#f8f9fa}
-.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;max-width:900px;margin:0 auto}
-.contact-card{background:#fff;border-radius:12px;padding:25px;box-shadow:0 2px 15px rgba(0,0,0,.06);text-align:center}
-.contact-card h3{color:#1a1a2e;font-size:1rem;margin-bottom:10px}
-.contact-card p,.contact-card a{color:#555;font-size:14px;text-decoration:none;line-height:1.7}
-.contact-card a:hover{color:#6c63ff}
-footer{background:#1a1a2e;color:#aaa;text-align:center;padding:30px;font-size:13px}
-footer p{margin-bottom:5px}
-@media(max-width:768px){
-nav{flex-wrap:wrap;gap:10px}
-hero h2{font-size:2rem}
-.hero-btns{flex-direction:column;align-items:center}
-.badges{gap:20px}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jindal Steel Trading Co. - Leading Steel Supplier in Gurgaon</title>
+  <meta name="description" content="Premium Quality MS Iron Pipes, Angles, Channels & Iron Products at Best Rates. Serving construction, manufacturing industries across India."/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; font-size: 14px; color: #333; background: #f5f5f5; }
+    a { color: #1a6eb5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .header { background: #fff; border-bottom: 2px solid #e0e0e0; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .header-left { display: flex; align-items: center; gap: 14px; }
+    .logo-box { width: 70px; height: 70px; background: #1a2e6e; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 11px; text-align: center; padding: 4px; }
+    .company-name { font-size: 22px; font-weight: bold; color: #222; }
+    .company-meta { font-size: 12px; color: #666; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .badge { background: #e8f4e8; color: #2a7a2a; border: 1px solid #c3e6c3; border-radius: 3px; padding: 2px 6px; font-size: 11px; }
+    .trust-seal { background: #fff3cd; color: #856404; border: 1px solid #ffc107; border-radius: 3px; padding: 2px 6px; font-size: 11px; }
+    .stars { color: #f5a623; font-size: 13px; }
+    .header-right { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+    .btn-primary { background: #1a6eb5; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; }
+    .btn-contact { background: #2d9e2d; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; }
+
+    nav { background: #1a2e6e; display: flex; align-items: center; flex-wrap: wrap; }
+    nav a { color: #fff; padding: 12px 18px; display: block; font-size: 13px; }
+    nav a:hover, nav a.active { background: #fff; color: #1a2e6e; text-decoration: none; }
+
+    .section { background: #fff; margin: 16px 0; padding: 28px 24px; }
+    .section-title { font-size: 20px; font-weight: bold; color: #1a2e6e; border-bottom: 3px solid #1a2e6e; display: inline-block; padding-bottom: 4px; margin-bottom: 18px; }
+    .about-text { line-height: 1.7; color: #444; max-width: 860px; margin: 0 auto 20px; text-align: center; font-size: 14px; }
+    .about-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center; margin-top: 16px; }
+    .about-card { border: 1px solid #e0e0e0; border-radius: 6px; padding: 14px 10px; }
+    .about-card .label { font-size: 12px; color: #888; margin-bottom: 4px; }
+    .about-card .value { font-size: 14px; font-weight: bold; color: #222; }
+
+    .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .product-card { border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; background: #fafafa; }
+    .product-card h4 { font-size: 14px; color: #1a6eb5; margin: 12px; }
+
+    .footer { background: #1a2e6e; color: #ccc; padding: 30px 24px; margin-top: 20px; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; }
+    .footer h3 { color: #fff; margin-bottom: 12px; font-size: 15px; }
+    .footer ul { list-style: none; }
+    .footer ul li { margin-bottom: 7px; }
+    .footer ul li a { color: #ccc; font-size: 13px; }
+    .contact-info { background: #fff; color: #333; border-radius: 8px; padding: 20px; margin-top: 20px; }
+    .contact-info h3 { font-size: 16px; margin-bottom: 12px; color: #1a2e6e; }
+    .contact-phone { font-size: 18px; font-weight: bold; color: #2d9e2d; margin: 10px 0; }
+    .contact-email { color: #1a6eb5; font-size: 14px; margin: 10px 0; }
+    .address { font-size: 13px; color: #444; line-height: 1.6; margin: 10px 0; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 12px; }
+    .text-center { text-align: center; }
+
+    @media (max-width: 768px) {
+      .about-grid, .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .about-grid, .products-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo-box">JINDAL<br>STEEL<br>TRADING<br>CO.</div>
+    <div>
+      <div class="company-name">Jindal Steel Trading Co.</div>
+      <div class="company-meta">
+        <span>📍 Gurugram, Haryana</span>
+        <span class="badge">✔ GST - 06BSMPG8268B1ZN</span>
+        <span class="trust-seal">⚡ TrustSEAL</span>
+        <span class="badge">✔ Mobile</span>
+        <span class="badge">✔ Email</span>
+        <span>👤 10 yrs</span>
+      </div>
+      <div class="company-meta" style="margin-top:6px;">
+        <span class="stars">★★★★☆</span>
+        <strong>4.4</strong> (20 Reviews) &nbsp;|&nbsp; 86% Response Rate
+      </div>
+    </div>
+  </div>
+  <div class="header-right">
+    <button class="btn-primary" onclick="alert('+91-8076751993')">📞 View Mobile Number</button>
+    <button class="btn-contact" onclick="window.location.href='mailto:jindalsteltradingco@gmail.com'">✉ Contact Supplier</button>
+  </div>
+</div>
+
 <nav>
-<div class="logo">
-<div class="logo-icon">JST</div>
-<div class="logo-text"><h1>JINDAL STEEL TRADING CO.</h1><p>Your Trusted Steel Partner Since 2002</p></div>
-</div>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<a href="tel:+918076751993" class="btn-call">&#128222; Call</a>
+  <a href="#home" class="active">Home</a>
+  <a href="#products">Products &amp; Services</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact Us</a>
 </nav>
-<hero id="home">
-<h2>Leading Steel Supplier<br>in Gurgaon</h2>
-<p>Premium Quality MS Iron Pipes, Angles, Channels &amp; Iron Products at Best Rates</p>
-<p>Serving Industries Across India with 20+ years of expertise</p>
-<div class="hero-btns">
-<a href="#contact" class="btn-primary">GET QUOTE</a>
-<a href="#products" class="btn-secondary">VIEW PRODUCTS</a>
+
+<div id="about" class="section">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">About Us</h2>
+    </div>
+    <p class="about-text">
+      Jindal Steel Trading Co. is a leading wholesaler and supplier of premium iron and steel products, founded in 2002. With over two decades of expertise, we specialize in MS steel pipes, Angles, Channels, Flat Plates, Metro Sheets, and a wide range of other iron goods. Based in Gurgaon, we serve customers across India, providing reliable, high-quality materials for various industries, including construction, manufacturing, and infrastructure. Our company is known for offering the best rates in the market without compromising on quality. With a commitment to customer satisfaction, we ensure timely deliveries, consistent quality, and personalized service.
+    </p>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="label">Nature of Business</div>
+        <div class="value">Trader - Wholesaler/Distributor</div>
+      </div>
+      <div class="about-card">
+        <div class="label">Legal Status</div>
+        <div class="value">Proprietorship</div>
+      </div>
+      <div class="about-card">
+        <div class="label">Annual Turnover</div>
+        <div class="value">1.5 - 5 Cr</div>
+      </div>
+      <div class="about-card">
+        <div class="label">Total Employees</div>
+        <div class="value">11 to 25 People</div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="badges">
-<span class="badge">&#10003; GST Certified</span>
-<span class="badge">&#10003; 20+ Years Experience</span>
-<span class="badge">&#10003; Best Market Rates</span>
-<span class="badge">&#10003; Timely Delivery</span>
+
+<div id="products" class="section">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Products &amp; Services</h2>
+    </div>
+    <div class="products-grid" style="margin-top:20px;">
+      <div class="product-card"><h4>Roofing Sheet</h4></div>
+      <div class="product-card"><h4>Mild Steel Pipe</h4></div>
+      <div class="product-card"><h4>Metal Roofing Sheet</h4></div>
+      <div class="product-card"><h4>Air Ventilation System</h4></div>
+      <div class="product-card"><h4>Welded Mesh</h4></div>
+      <div class="product-card"><h4>MS Plates</h4></div>
+      <div class="product-card"><h4>Wire Mesh</h4></div>
+      <div class="product-card"><h4>Mild Steel Bar</h4></div>
+      <div class="product-card"><h4>Chain Link Fencing</h4></div>
+    </div>
+  </div>
 </div>
-</hero>
-<section id="products">
-<h2 class="section-title">Our Products &amp; Services</h2>
-<p class="section-sub">Comprehensive Range of Steel and Iron Products in Gurgaon</p>
-<div class="products-grid">
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="MS Iron Pipes">
-<div class="card-body"><h3>MS Iron Pipes</h3><ul><li>&#10004; MS Square Iron Pipes</li><li>&#10004; MS Rectangular Pipes</li><li>&#10004; APL Apollo MS Pipes</li><li>&#10004; Construction Grade Pipes</li></ul></div>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Our Company</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products &amp; Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reach Us</h3>
+        <div class="contact-info">
+          <h3>Jindal Steel Trading Co.</h3>
+          <div class="address">
+            Ground, 3, SH. Chander Bhan, Near Mata Mandir Road, Sheetla Mata Mandir Marg, Sheetla Colony, Near Celebration Point, Gurugram-122001, Haryana, India
+          </div>
+          <div style="margin-top:15px;">
+            <strong>Vicky Jindal</strong> (Director)
+          </div>
+          <div class="contact-phone">📞 +91-8076751993</div>
+          <div class="contact-email">✉ jindalsteltradingco@gmail.com</div>
+          <div style="margin-top:10px; font-size:12px; color:#666;">
+            GST: 06BSMPG8268B1ZN
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:24px; font-size:12px; color:#aaa; border-top:1px solid #2e4a8e; padding-top:14px;">
+      All Rights Reserved | Jindal Steel Trading Co. &copy; 2026
+    </div>
+  </div>
 </div>
-<div class="product-card">
-<img src="https://jagdambasteels.com/uploads/2024/01/angle.png" alt="MS Angles">
-<div class="card-body"><h3>MS Angles &amp; Channels</h3><ul><li>&#10004; MS L Angle</li><li>&#10004; MS U Channel</li><li>&#10004; MS V Shaped Angle</li><li>&#10004; Custom Sizes Available</li></ul></div>
-</div>
-<div class="product-card">
-<img src="https://jagdambasteels.com/uploads/2024/01/flats.png" alt="MS Plates">
-<div class="card-body"><h3>MS Plates &amp; Sheets</h3><ul><li>&#10004; MS Flat Plates</li><li>&#10004; MS Chequered Plates</li><li>&#10004; Metro Sheets</li><li>&#10004; Custom Cut Sheets</li></ul></div>
-</div>
-<div class="product-card">
-<img src="https://5.imimg.com/data5/SELLER/Default/2022/7/PO/AZ/LF/3257041/roofing-sheet-500x500.jpg" alt="Roofing">
-<div class="card-body"><h3>Roofing Solutions</h3><ul><li>&#10004; Steel Roofing Sheets</li><li>&#10004; Polycarbonate Roofing</li><li>&#10004; GI Metal Roofing</li><li>&#10004; Roof Insulation Sheets</li></ul></div>
-</div>
-<div class="product-card">
-<img src="https://5.imimg.com/data5/SELLER/Default/2023/4/299818081/GW/QJ/AS/4548080/gi-chain-link-jali-500x500.jpg" alt="Wire Mesh">
-<div class="card-body"><h3>Wire Mesh &amp; Fencing</h3><ul><li>&#10004; GI Chain Link Jali</li><li>&#10004; Welded Wire Mesh</li><li>&#10004; Chain Link Fencing</li><li>&#10004; Chicken Wire Mesh</li></ul></div>
-</div>
-<div class="product-card">
-<img src="https://5.imimg.com/data5/SELLER/Default/2021/6/IM/JU/KI/3257041/turbo-ventilator-500x500.jpg" alt="Ventilation">
-<div class="card-body"><h3>Ventilation Systems</h3><ul><li>&#10004; Turbo Air Ventilators</li><li>&#10004; Roof Ventilators</li><li>&#10004; Wind Driven Ventilators</li><li>&#10004; Industrial Ventilation</li></ul></div>
-</div>
-</div>
-</section>
-<section class="contact-section" id="contact">
-<h2 class="section-title">Contact Us</h2>
-<p class="section-sub">Get in Touch for Best Steel Rates in Gurgaon</p>
-<div class="contact-grid">
-<div class="contact-card"><h3>&#128205; Visit Us</h3><p>Sheetla Mata Road, Gurgaon,<br>Haryana - 122001, India</p></div>
-<div class="contact-card"><h3>&#128222; Call Us</h3><p><a href="tel:+918076751993">+91-8076751993</a><br><a href="tel:+919991310980">+91-9991310980</a></p></div>
-<div class="contact-card"><h3>&#128231; Email Us</h3><p><a href="mailto:jindalsteeltradingco@gmail.com">jindalsteeltradingco@gmail.com</a></p></div>
-<div class="contact-card"><h3>&#128336; Business Hours</h3><p>Monday - Saturday<br>9:00 AM - 6:00 PM<br>Sunday: Closed</p></div>
-</div>
-</section>
-<footer>
-<p>&copy; 2026 Jindal Steel Trading Co. All Rights Reserved.</p>
-<p>GST: 06BSMPG8268B1ZN | Director: Vicky Jindal</p>
-<p>Steel Supplier Gurgaon | MS Iron Pipes | MS Angles &amp; Channels</p>
-</footer>
+
 </body>
 </html>
